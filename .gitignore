@@ -1,34 +1,55 @@
-# Virtual environments
+# === Virtual environments (NEVER commit) ===
 venv/
 weather_forecast_venv/
 env/
 .venv/
+.Python
 
-# Python
+# === Python bytecode ===
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
+*.egg-info/
+.pytest_cache/
 
-# Jupyter
+# === Jupyter ===
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Data files (too large for git)
-data/*.csv
-data/*.xlsx
-
-# IDE
+# === IDE / Editor ===
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS
+# === OS ===
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Environment vars
+# === Secrets & environment vars ===
 .env
+.env.local
+*.key
+*.pem
 
-# Logs
+# === Logs ===
 *.log
+
+# === Large/temp data  ===
+# data/*.csv         # uncomment ONLY if your CSV exceeds 100 MB
+# data/raw/
+
+# === Model artifacts (large binary files) ===
+# Keep small models, exclude large ones
+*.h5
+*.keras
+*.pkl
+# But allow saved model checkpoints we want to share:
+!models/final_*.pkl
+
+# === Misc ===
+*.docx
+*.tmp
+.cache/
