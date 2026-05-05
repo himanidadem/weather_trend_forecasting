@@ -50,6 +50,5 @@ desktop.ini
 !models/final_*.pkl
 
 # === Misc ===
-*.docx
 *.tmp
 .cache/
