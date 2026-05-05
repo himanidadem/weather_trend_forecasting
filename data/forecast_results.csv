@@ -1,0 +1,13 @@
+City,Model,MAE,RMSE
+London,ARIMA,3.4,4.31
+London,Seasonal Naive,3.49,4.55
+London,XGBoost,3.36,4.08
+London,Ensemble,2.99,3.8
+New Delhi,ARIMA,6.93,8.5
+New Delhi,Seasonal Naive,4.12,5.18
+New Delhi,XGBoost,3.52,4.52
+New Delhi,Ensemble,3.64,4.47
+Canberra,ARIMA,5.8,6.77
+Canberra,Seasonal Naive,7.65,9.38
+Canberra,XGBoost,7.07,8.78
+Canberra,Ensemble,5.24,6.67
